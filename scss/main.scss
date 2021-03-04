@@ -1,6 +1,74 @@
-$primary-color: #444;
+// Run the sass script that was added to the package.json file
+// modern_simple_portfolio cgrogan$ npm run sass - updates the css file
+
+@import "config"; // move variable, mixins, etc. to a partial scss file.
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
   background: $primary-color;
   color: #fff;
+  height: 100%;
+  margin: 0;
+  @include background();
+}
+
+// Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem;
+  }
+  &.sm-heading {
+    margin: 0 0 2rem 0;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+  .social-media {
+    margin: 1rem 0 0 0;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        // transition: all 777ms ease-out; //replaced with mixin
+        @include easeOut();
+      }
+    }
+  }
+  &#home {
+    overflow: hidden; //hides scroll bars
+    h1 {
+      margin-top: 20vh; // moves target down 20 of 100 slices horizontally (h)
+    }
+  }
+}
+
+.text-secondary {
+  color: $secondary-color;
 }

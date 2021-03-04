@@ -1,0 +1,37 @@
+// Run the sass script that was added to the package.json file
+// modern_simple_portfolio cgrogan$ npm run sass - updates the css file
+
+// variables
+$primary-color: #444;
+$secondary-color: #ffd700;
+$show-home-image: true;
+$home-image: url(../images/background.jpg);
+$background-opacity: 0.8;
+
+// functions
+@mixin easeOut {
+  // essentially a mixin is essentially a function that can be called
+  // The code effectively gets inserted where the mixin is used
+  transition: all 0.7s ease-out;
+}
+@mixin background {
+  @if $show-home-image {
+    &#bg-image {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+      // .overlay { //instead of a class can change to a pseudo-element
+      &:after {
+        content: ""; //content required for befor or after pseudoelements
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // in SASS can wrap the color in rgba(color,opacity) to add transparency
+        background-color: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
