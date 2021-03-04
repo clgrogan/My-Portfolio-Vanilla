@@ -3,6 +3,7 @@
 
 @import "config"; // move variable, mixins, etc. to a partial scss file.
 @import "menu";
+@import "mobile";
 * {
   box-sizing: border-box;
 }
