@@ -2,7 +2,7 @@
 // modern_simple_portfolio cgrogan$ npm run sass - updates the css file
 
 @import "config"; // move variable, mixins, etc. to a partial scss file.
-
+@import "menu";
 * {
   box-sizing: border-box;
 }
