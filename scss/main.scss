@@ -3,7 +3,9 @@
 
 @import "config"; // move variable, mixins, etc. to a partial scss file.
 @import "menu";
-@import "mobile";
+@import "responsive";
+@import "about";
+
 * {
   box-sizing: border-box;
 }
@@ -12,12 +14,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   @include background();
 }
-
 // Headings
 h1,
 h2,
@@ -36,7 +37,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -47,6 +48,7 @@ header {
 }
 
 main {
+  min-height: calc(100vh - 3.5rem);
   padding: 4rem;
   height: 100%;
   .social-media {
@@ -58,7 +60,7 @@ main {
       &:hover {
         color: $secondary-color;
         // transition: all 777ms ease-out; //replaced with mixin
-        @include easeOut();
+        @include easeOut;
       }
     }
   }
@@ -73,3 +75,14 @@ main {
 .text-secondary {
   color: $secondary-color;
 }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 8);
+  color: set-text-color($primary-color);
+  height: 3.5rem;
+}
+
+@import "about";
+@import "responsive";

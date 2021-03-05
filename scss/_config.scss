@@ -8,7 +8,7 @@ $show-home-image: true;
 $home-image: url(../images/background.jpg);
 $background-opacity: 0.8;
 
-// functions
+// functions / mixins
 @mixin easeOut {
   // essentially a mixin is essentially a function that can be called
   // The code effectively gets inserted where the mixin is used
@@ -36,7 +36,16 @@ $background-opacity: 0.8;
   }
 }
 
-// Media Query Functions
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Media Query mixins
 @mixin mediaSmall {
   @media screen and (max-width: 500px) {
     @content;
