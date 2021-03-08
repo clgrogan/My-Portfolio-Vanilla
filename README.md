@@ -1,4 +1,4 @@
-# My Portfolio HTML, SASS (CSS), and a bit of JavaScript
+# My Portfolio built using HTML, SASS (CSS), and a bit of JavaScript
 
 This is a project built using HTML5 and SASS (CSS) only. No libraries or frameworks like React or Angular were used.
 
@@ -40,7 +40,7 @@ All of the following technologies, tools, topics, etc. were used for this projec
 
 ## Deployment
 
-- Web Site **[curtg.netlify.app/](https://curtg.netlify.app/)**
+- Web Site **[curtg.netlify.app/](https://curtg.netlify.com/)**
 - Code **[https://github.com/clgrogan/My-Portfolio-Vanilla](https://github.com/clgrogan/My-Portfolio-Vanilla)**
 - Hosted on [Netlify](https://app.netlify.com/) utilizing [GitHub](https://app.netlify.com/)'s Netlify App
 
