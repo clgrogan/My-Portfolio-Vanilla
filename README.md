@@ -1,4 +1,4 @@
-# Portfolio using HTML and SASS (CSS) only.
+# My Portfolio HTML, SASS (CSS), and a bit of JavaScript
 
 This is a project built using HTML5 and SASS (CSS) only. No libraries or frameworks like React or Angular were used.
 
