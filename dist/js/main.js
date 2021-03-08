@@ -5,14 +5,26 @@ const menuBrand = document.querySelector('.menu-brand');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.nav-item');
 
-// Set Initial State of Menu
+// Set Initial State of values
 let showMenu = false;
 
+// Start listening
 menuButton.addEventListener('click', toggleMenu);
-console.log('main.js has loaded');
+
+// Email Address initialization
+let emailAddress = null;
+let emailBox = null;
+if (document.getElementById('email-address')) {
+  // not all consumers of this js will have an element with
+  // the email address
+  emailBox = document.querySelector('.email-box');
+  emailAddress = document.getElementById('email-address').innerHTML;
+  emailBox.addEventListener('click', sendEmail);
+}
+console.log('showMenu: ' + showMenu)
+console.log('emailAddress: ' + emailAddress);
 
 function toggleMenu() {
-  console.log('Menu Clicked. Initial showMenu state is ' + showMenu);
   if(!showMenu) {
     menuButton.classList.add('close');
     menu.classList.add('show');
@@ -32,4 +44,8 @@ function toggleMenu() {
   }
   // Toggle Menu State
   showMenu = !showMenu;
+}
+
+function sendEmail(emailAddress) {
+  // window.open('mailto:' + emailAddress);
 }
