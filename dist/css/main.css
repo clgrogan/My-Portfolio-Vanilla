@@ -9,7 +9,7 @@
     width: 1.7rem;
     height: 0.2rem;
     margin: 0 0 0.3rem 0;
-    background: #fff;
+    background: #eee;
     transition: all 0.7s ease-out; }
   .menu-button.close {
     transform: rotate(180deg); }
@@ -75,7 +75,7 @@
     text-transform: capitalize;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: #eee;
     text-decoration: none;
     transition: all 0.7s ease-out; }
     .menu .nav-link:hover {
@@ -94,6 +94,8 @@
   transition-delay: 0.4s; }
 
 @media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); }
   .brand-container {
     width: 30vh;
     height: 30vh; }
@@ -109,7 +111,9 @@
   .profile-image {
     width: 100%;
     height: 100%;
-    border-radius: 50%; } }
+    border-radius: 50%; }
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -137,16 +141,20 @@
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
     .about-info .bio {
-      font-size: 1.1rem; } }
+      font-size: 1.1rem; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     color: rgba(255, 255, 255, 0.8);
-    margin: 10vh 0 0 0; } }
+    margin: 10vh 0 0 0; }
+  .projects {
+    grid-template-columns: 1fr; } }
 
-main#home {
+main#about {
   overflow: hidden; }
-  main#home h1 {
+  main#about h1 {
     margin-top: auto; }
 
 .about-info {
@@ -187,7 +195,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   background: #444;
-  color: #fff;
+  color: #eee;
   height: 100%;
   margin: 0; }
   body#bg-image {
@@ -221,7 +229,7 @@ h3 {
     background: rgba(73, 73, 73, 0.5); }
 
 a {
-  color: #fff;
+  color: #eee;
   text-decoration: none; }
 
 header {
@@ -252,46 +260,41 @@ main {
   text-align: center;
   padding: 1rem;
   background: #303030;
-  color: #fff;
+  color: #eee;
   height: 3.5rem; }
 
-main#home {
-  overflow: hidden; }
-  main#home h1 {
-    margin-top: auto; }
-
-.about-info {
+.projects {
   display: grid;
-  grid-gap: 1.9rem;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .profile-image {
-    width: 20vh;
-    height: 20vh;
-    border: solid 0.2rem #ffd700;
-    border-radius: 50%; }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    width: 20vh;
-    height: 20vh;
-    margin: auto;
-    border: solid 0.2rem #ffd700;
-    border-radius: 50%; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.4rem;
-    border-bottom: #ffd700 0.3rem solid; }
+  .projects img {
+    width: 100%;
+    border: 0.2rem rgba(238, 238, 238, 0.8) solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #ffd700;
+      transition: all 0.7s ease-out; }
+
+.button, .button-dark, .button-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .button:hover, .button-dark:hover, .button-light:hover {
+    background: #ffd700;
+    color: #111; }
+
+.button-dark {
+  background: black;
+  color: #eee; }
+
+.button-light {
+  background: #c4c4c4;
+  color: #111; }
 
 @media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); }
   .brand-container {
     width: 30vh;
     height: 30vh; }
@@ -307,7 +310,9 @@ main#home {
   .profile-image {
     width: 100%;
     height: 100%;
-    border-radius: 50%; } }
+    border-radius: 50%; }
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -335,9 +340,13 @@ main#home {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
     .about-info .bio {
-      font-size: 1.1rem; } }
+      font-size: 1.1rem; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     color: rgba(255, 255, 255, 0.8);
-    margin: 10vh 0 0 0; } }
+    margin: 10vh 0 0 0; }
+  .projects {
+    grid-template-columns: 1fr; } }

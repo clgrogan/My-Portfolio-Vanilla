@@ -3,6 +3,8 @@
 
 // variables
 $primary-color: #444;
+$light-text-color: #eee;
+$dark-text-color: #111;
 $secondary-color: #ffd700;
 $show-home-image: true;
 $home-image: url(../images/background.jpg);
@@ -39,9 +41,9 @@ $background-opacity: 0.8;
 // Set Text Color
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
-    @return #000;
+    @return $dark-text-color;
   } @else {
-    @return #fff;
+    @return $light-text-color;
   }
 }
 
