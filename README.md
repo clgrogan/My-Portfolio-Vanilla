@@ -1,6 +1,10 @@
-# My Portfolio built using HTML, SASS (CSS), and a bit of JavaScript
+# Portfolio web site using HTML, SCSS/SASS, and a bit of JavaScript
 
-This is a project built using HTML5 and SASS (CSS) only. No libraries or frameworks like React or Angular were used.
+This project is built using HTML5, and SCSS/SASS (CSS3).
+
+I specifically avoided using Bootstrap, React, Angular, Vue, or other templates, frameworks, or libraries similar to these to provide a pure HTML/CSS project.
+
+As a future project I may create a portfolio with a backend database that would be accessed via Angular or React. If you search my GitHub repository in the future (past March 2021) perhaps it will be around.
 
 ## Summary
 
@@ -13,12 +17,12 @@ This is a project built using HTML5 and SASS (CSS) only. No libraries or framewo
 
 ## Project Specifications
 
-Build a portfolio web site using advanced SASS/CSS functionality. Include a langing page, contact page, project page, and an about page.
+Build a portfolio web site using HTML5, SCSS/SASS,CSS3, and JavaScript. Include a landing page, contact page, project page, and an about page.
 
 ## Built With
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Mozilla developer guide for HTML5.
-- [SASS](https://sass-lang.com/documentation) - Sass is a stylesheet language that's compiled to CSS.
+- [SCSS/SASS](https://sass-lang.com/documentation) - Sass is a stylesheet language that's compiled to CSS.
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Cascading Style Sheets latest official version.
 
 ## Subjects Demonstrated
@@ -29,6 +33,7 @@ All of the following technologies, tools, topics, etc. were used for this projec
 - JavaScript
 - CSS3
 - SASS
+- SCSS
 - Transitions
 - Grid
 - Flex
@@ -53,4 +58,4 @@ All of the following technologies, tools, topics, etc. were used for this projec
 
 ## Acknowledgments
 
-**[Traversy Media - Youtube series](https://www.youtube.com/playlist?list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU)** by Brad Traversy
+**[Traversy Media - Youtube series](https://www.youtube.com/playlist?list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU)** by Brad Traversy. I watched Brad's video series linked here.

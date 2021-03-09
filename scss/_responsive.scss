@@ -33,6 +33,7 @@
 // Tablets & Small Laptops
 @include mediaMedium {
   main {
+    padding: 3rem;
     align-items: center;
     text-align: center;
 
@@ -84,6 +85,14 @@
     color: rgba(#fff, 0.8);
     margin: 10vh 0 0 0;
   }
+  h1,
+  h2,
+  h3 {
+    &.lg-heading {
+      font-size: 4rem;
+    }
+  }
+
   .projects {
     grid-template-columns: 1fr;
   }
