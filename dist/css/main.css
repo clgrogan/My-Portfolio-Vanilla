@@ -319,7 +319,7 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     color: rgba(255, 255, 255, 0.8);
-    margin: 10vh 0 0 0; }
+    margin: 10vh 0 4vh 0; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
