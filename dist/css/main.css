@@ -314,7 +314,9 @@ main {
     .about-info .bio {
       font-size: 1.1rem; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .nav-item:nth-child(4) {
+    padding-bottom: 15vh; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
