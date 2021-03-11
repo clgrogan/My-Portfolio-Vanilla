@@ -11,6 +11,12 @@ let showMenu = false;
 // Start listening
 menuButton.addEventListener('click', toggleMenu);
 
+// Wake up the back end servers
+
+//url1 backend for the honey get list backend
+let url1='https://honey-get-api.herokuapp.com';
+ping(url1);
+
 // Email Address initialization
 let emailAddress = null;
 let emailBox = null;
@@ -48,4 +54,9 @@ function toggleMenu() {
 
 function sendEmail(emailAddress) {
   // window.open('mailto:' + emailAddress);
+}
+
+function ping(url){
+  let imageObject= new Image();
+  imageObject.src = url;
 }
