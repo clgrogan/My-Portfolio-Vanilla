@@ -48,7 +48,16 @@ main {
   .job-3 {
     grid-area: job3;
   }
-
+  ul {
+    list-style-type: none;
+    padding-left: 0.8rem;
+    color: $secondary-color;
+    .items {
+      color: set-text-color($primary-color);
+      font-style: italic;
+      font-size: smaller;
+    }
+  }
   .job {
     background: lighten($primary-color, 5);
     padding: 0.4rem;

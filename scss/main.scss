@@ -46,6 +46,14 @@ header {
   width: 100%;
 }
 
+.hyperlink {
+  color: set-text-color($secondary-color);
+  color: $secondary-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 main {
   min-height: calc(100vh - 3.5rem);
   padding: 4rem;
