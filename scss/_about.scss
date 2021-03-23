@@ -34,8 +34,11 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+    .quote {
+      font-family: trebuchet, sans-serif, Tahoma, Geneva, Verdana;
+      font-style: italic;
+    }
   }
-
   .job-1 {
     grid-area: job1;
   }

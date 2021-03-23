@@ -118,6 +118,9 @@ main#about {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+    .about-info .bio .quote {
+      font-family: trebuchet, sans-serif, Tahoma, Geneva, Verdana;
+      font-style: italic; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
