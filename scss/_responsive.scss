@@ -44,6 +44,10 @@
   }
   .menu-nav,
   .menu-brand {
+    .brand-container {
+      width: 20vh;
+      height: 20vh;
+    }
     float: none;
     width: 100%;
     min-height: 0;
@@ -72,6 +76,11 @@
     grid-template-columns: 1fr;
     .bio {
       font-size: 1.1rem;
+    }
+
+    .bio-image {
+      width: 20vh;
+      height: 20vh;
     }
   }
   .projects {

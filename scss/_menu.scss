@@ -62,10 +62,10 @@
     overflow: hidden;
   }
   &-nav {
-    opacity: $background-opacity;
+    opacity: $modal-bg-opacity;
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: darken($primary-color, 10);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -78,7 +78,7 @@
 
   // Brand Side
   &-brand {
-    background: rgba($primary-color, $background-opacity);
+    background: rgba($primary-color, $modal-bg-opacity);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -87,8 +87,8 @@
       transform: translate3d(0, 0, 0);
     }
     .brand-container {
-      width: 20vh;
-      height: 20vh;
+      width: 25vh;
+      height: 25vh;
       border: solid 0.2rem $secondary-color;
       border-radius: 50%;
     }

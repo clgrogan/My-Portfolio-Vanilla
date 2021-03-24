@@ -2,13 +2,14 @@
 // @import just the 'name' will be needed.
 
 // variables
-$primary-color: #444;
+$primary-color: #333;
 $light-text-color: #eee;
 $dark-text-color: #111;
 $secondary-color: #ffd700;
 $show-home-image: true;
 $home-image: url(../images/background.jpg);
 $background-opacity: 0.8;
+$modal-bg-opacity: 0.95;
 
 // functions / mixins
 @mixin easeOut {
