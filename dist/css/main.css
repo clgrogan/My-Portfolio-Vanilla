@@ -1,3 +1,8 @@
+.menu-text {
+  position: absolute;
+  right: 4rem;
+  top: 0.9rem; }
+
 .menu-button {
   position: absolute;
   z-index: 3;
@@ -139,6 +144,43 @@ main#about {
     background: #404040;
     padding: 0.4rem;
     border-bottom: #ffd700 0.3rem solid; }
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(51, 51, 51, 0.5);
+  z-index: 99999;
+  opacity: 0;
+  transition: all 0.7s ease-out;
+  pointer-events: none; }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .modalDialog .close {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    margin: 0;
+    border: solid 0.15rem rgba(255, 215, 0, 0.8);
+    border-radius: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    color: #ffd700;
+    background: #333; }
+  .modalDialog .modalBody {
+    width: 80%;
+    position: relative;
+    margin: 15vh auto;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: solid 0.2rem rgba(255, 215, 0, 0.8);
+    background: #333; }
+  .modalDialog .projectModalImage {
+    width: 75%;
+    display: block;
+    margin: 1rem auto; }
 
 * {
   box-sizing: border-box; }
@@ -339,6 +381,10 @@ main {
       height: 20vh; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
+    .projects .modalBody {
+      width: 90%; }
+    .projects .projectModalImage {
+      width: 100%; }
   .nav-item:nth-child(4) {
     padding-bottom: 15vh; } }
 

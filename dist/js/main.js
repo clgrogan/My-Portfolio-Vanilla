@@ -11,9 +11,7 @@ let showMenu = false;
 // Start listening
 menuButton.addEventListener('click', toggleMenu);
 
-// Wake up the back end servers
-
-//url1 backend for the honey get list backend
+// Ping heroku servers to wake them up
 let url1='https://honey-get-api.herokuapp.com';
 ping(url1);
 

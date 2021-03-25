@@ -85,6 +85,10 @@
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
+    .modalBody,
+    .projectModalImage {
+      width: 85%;
+    }
   }
   .nav-item:nth-child(4) {
     padding-bottom: 15vh;

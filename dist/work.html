@@ -52,18 +52,46 @@
 
       <section class="projects">
         <div class="item">
-          <a href="https://full-stack-list.netlify.com/" target="_blank">
+          <a href="#openModal">
             <img
               src="images/projects/react-full-stack-list-vscode-ss.png"
               alt="Honey Get List - Project 1"
             />
           </a>
-          <a
-            href="https://full-stack-list.netlify.com/"
-            target="_blank"
-            class="button-light"
+          <a href="#openModal" class="button-light"
             ><i class="fas fa-eye">Full-stack List Application</i></a
           >
+          <div id="openModal" class="modalDialog">
+            <div class="modalBody">
+              <!-- <div class="closeButton"> -->
+              <a href="#" title="Close" class="close">X</a>
+              <!-- </div> -->
+              <h2>
+                Honey Get Lists <span class="text-secondary">Full-stack</span>
+              </h2>
+              <img
+                class="projectModalImage"
+                src="images/projects/react-full-stack-list-vscode-ss.png"
+                alt="Honey Get List - Project 1"
+              />
+              <p>
+                "Honey Get List" is a shopping or "To-do" list full-stack
+                application. It is a mobile first responsive application
+                demostrating full CRUD capabilities from front to back.
+              </p>
+              <p>
+                The front-end is a Single Page Application (SPA) built with
+                React, JavaScript, HTML, and CSS. The application was manually
+                deployed to Netlify and then refactored to utilize continous
+                deployment via GitHub.
+              </p>
+              <p>
+                The back-end serves up a RESTful API and is built with C# | .NET
+                utilizing Entity Framework Core with a SQL database. Deployment
+                is to Heroku utilizing a Docker container.
+              </p>
+            </div>
+          </div>
           <a
             href="https://github.com/clgrogan/HoneyGetListFullStack"
             target="_blank"
