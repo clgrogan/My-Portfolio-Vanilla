@@ -14,18 +14,17 @@
     pointer-events: auto;
   }
   .close {
-    // display: block;
     position: absolute;
-    top: -3rem;
+    top: 0;
     right: 0;
-    margin: 0;
-    border: solid 0.15rem rgba($secondary-color, $background-opacity);
-    border-radius: 0.4rem;
-    padding: 0.2rem 0.4rem;
-    color: $secondary-color;
-    background: $primary-color;
+    margin: auto 1rem;
+    font-size: 2rem;
+    color: rgba(set-text-color($primary-color), $background-opacity);
+    background: transparent;
   }
   .modalBody {
+    max-height: calc(100vh - 25vh);
+    overflow-y: auto;
     width: 80%;
     position: relative;
     margin: 15vh auto;
@@ -33,9 +32,12 @@
     border-radius: 0.8rem;
     border: solid 0.2rem rgba($secondary-color, $background-opacity);
     background: $primary-color;
+    // background: $proj1-bg-image;
   }
   .projectModalImage {
-    width: 75%;
+    width: auto;
+    max-height: 50vh;
+
     display: block;
     margin: 1rem auto;
   }

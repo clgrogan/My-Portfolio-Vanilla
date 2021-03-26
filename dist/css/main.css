@@ -161,15 +161,15 @@ main#about {
     pointer-events: auto; }
   .modalDialog .close {
     position: absolute;
-    top: -3rem;
+    top: 0;
     right: 0;
-    margin: 0;
-    border: solid 0.15rem rgba(255, 215, 0, 0.8);
-    border-radius: 0.4rem;
-    padding: 0.2rem 0.4rem;
-    color: #ffd700;
-    background: #333; }
+    margin: auto 1rem;
+    font-size: 2rem;
+    color: rgba(238, 238, 238, 0.8);
+    background: transparent; }
   .modalDialog .modalBody {
+    max-height: calc(100vh - 25vh);
+    overflow-y: auto;
     width: 80%;
     position: relative;
     margin: 15vh auto;
@@ -178,7 +178,8 @@ main#about {
     border: solid 0.2rem rgba(255, 215, 0, 0.8);
     background: #333; }
   .modalDialog .projectModalImage {
-    width: 75%;
+    width: auto;
+    max-height: 50vh;
     display: block;
     margin: 1rem auto; }
 
