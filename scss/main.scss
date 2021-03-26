@@ -96,7 +96,7 @@ main {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  img {
+  img.thumbNail {
     width: 100%;
     border: 0.2rem rgba(set-text-color($primary-color), $background-opacity)
       solid;
@@ -104,6 +104,32 @@ main {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+  .projImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 0.2rem rgba(set-text-color($primary-color), $background-opacity)
+      solid;
+    position: relative;
+    padding-top: 66%;
+    margin-bottom: 0.4rem;
+    background: $proj1-bg-image;
+    // background-attachment: fixed;
+    background-size: cover;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+    .projThumbnail {
+      position: absolute;
+      height: 96%;
+      top: 2%;
+      width: 50%;
+      border-radius: 0.2rem;
     }
   }
 }
