@@ -1,5 +1,6 @@
 // Select DOM Items
 const menuButton = document.querySelector('.menu-button');
+const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 const menuBrand = document.querySelector('.menu-brand');
 const menuNav = document.querySelector('.menu-nav');
@@ -10,6 +11,7 @@ let showMenu = false;
 
 // Start listening
 menuButton.addEventListener('click', toggleMenu);
+menuToggle.addEventListener('click', toggleMenu);
 
 // Ping heroku servers to wake them up
 let url1='https://honey-get-api.herokuapp.com';
@@ -31,6 +33,7 @@ console.log('emailAddress: ' + emailAddress);
 function toggleMenu() {
   if(!showMenu) {
     menuButton.classList.add('close');
+    // menuToggle.classList.add('close');
     menu.classList.add('show');
     menuNav.classList.add('show');
     menuBrand.classList.add('show');
@@ -39,6 +42,7 @@ function toggleMenu() {
     });
   } else {
     menuButton.classList.remove('close');
+    // menuToggle.classList.remove('close');
     menu.classList.remove('show');
     menuNav.classList.remove('show');
     menuBrand.classList.remove('show');
