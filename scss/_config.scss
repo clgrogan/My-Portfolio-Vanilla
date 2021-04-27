@@ -14,7 +14,7 @@ $modal-bg-opacity: 0.95;
 
 // functions / mixins
 @mixin easeOut {
-  // essentially a mixin is essentially a function that can be called
+  // essentially a mixin is a function that can be called
   // The code effectively gets inserted where the mixin is used
   transition: all 0.7s ease-out;
 }
